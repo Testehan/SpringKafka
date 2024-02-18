@@ -1,0 +1,28 @@
+39. Kafka can be obtaine from https://kafka.apache.org/quickstart
+    I have it here : /Users/danteshte/Applications
+
+    1.To start it, go inside the folder and run
+        bin/zookeeper-server-start.sh config/zookeeper.properties
+    2.From another command prompt, run
+        bin/kafka-server-start.sh config/server.properties
+    3.If you want to run in command prompt a kafka consumer, you can run :
+        bin/kafka-console-consumer.sh --topic dante --from-beginning --bootstrap-server localhost:9092
+
+    4. Run "spring-kafka" project ...and send request from postman to http://localhost:8080/api/v1/messages
+    This project is an example of a simple REST endpoint, that produces a message,
+    publishes it on a kafka topic, and consumes it...this is done by running kafka locally like
+    mentioned above
+    In production one would use a "managed kafka"...cloud hosted one like AWS offers this..
+
+
+Other interesting tutorials on Kafka
+TODO Course | Apache Kafka Fundamentals
+    https://www.youtube.com/watch?v=-DyWhcX3Dpc&list=PLa7VYi0yPIH2PelhRHoFR5iQgflg-y6JA
+
+TODO Event-Driven Architectures Done Right, Apache Kafka • Tim Berglund • Devoxx Poland 2021
+    https://www.youtube.com/watch?v=A_mstzRGfIE
+
+TODO Spring Boot + Apache Kafka Tutorial
+    https://www.youtube.com/watch?v=U17DtHLOsTU&list=PLGRDMO4rOGcNLwoack4ZiTyewUcF6y6BU
+
+TODO https://www.baeldung.com/ops/kafka-docker-setup
